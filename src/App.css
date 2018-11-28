@@ -1,0 +1,390 @@
+.mt-100{
+  margin-top: 100px;
+}
+html,body{
+  font-family: 'Rubik', sans-serif;
+}
+.font-oswald{
+  font-family: 'Oswald', sans-serif;
+}
+.text-test{
+  color: #838896;
+}
+.w-500{
+  width: 500px;
+  height: 500px;
+}
+.px-5{
+  padding: 0 5rem !important;
+}
+.font-500{
+  font-weight: 500
+}
+.w-35vh{
+  width: 35vh;
+}
+/* BANNER */  
+
+/* END BANNER */
+
+
+/* MENU */
+.navbar::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(253, 19, 19);
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+}
+.navbar{
+  padding: 0;
+}
+.bg-dark{
+  background-color: #22232b !important;
+}
+.menu .navbar-nav .nav-link{
+  display: block;
+  padding: 2em!important;
+  position: relative;
+  transition: all .5s;
+}
+.menu .navbar-nav .nav-item{
+  margin: 0 1em;
+  position: relative;
+}
+.menu .nav-link::before{
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  height: 100%;
+  content: '';
+  color: transparent;
+  transition: all .25s;
+}
+.menu .nav-link:hover::before{
+  content: '';
+  background-color: rgb(253, 19, 19);
+  width: 100%;
+  height: 100%;
+  transform: skewX(-20deg);
+  z-index: 1;
+}
+.checked::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(253, 19, 19);
+  width: 100%;
+  height: 100%;
+  transform: skewX(-20deg);
+  z-index: 1;
+}
+.menu span{
+  position: relative;
+  z-index: 90;
+}
+.navbar-nav .dropdown:hover .dropdown-menu{
+  display: block;
+}
+i{
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+.shop .fa-times{
+  position: absolute;
+  right: 0;
+}
+.main .dropdown-menu::before,
+.shop .dropdown-menu::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  top: -7px;
+  right: 30px;
+}
+.shop .dropdown-menu::before{
+  top: -6px;
+  right: 23px;
+}
+.main .dropdown-menu,
+.shop .dropdown-menu{
+  right: 0;
+  left: unset;
+  width: 75vh
+}
+.dropdown-divider{
+  border-top: 1px solid #e9ecef
+}
+.main .dropdown-menu,
+.shop .dropdown-menu
+{
+  line-height: 2
+}
+.main .dropdown-item{
+  line-height: 2.5;
+}
+/* END MENU */
+
+
+
+/* CONTENTS */
+/* <-- TITLE --> */
+.contents{
+  background-color: #14151b;
+}
+
+
+.title{
+  color: rgb(216, 216, 216);
+}
+.title .display-1{
+  font-weight: 500;
+  font-size: 140px;
+  opacity: 0.1;
+  margin-top: .5em;
+}
+.title h1:nth-child(2){
+  margin-top: -118px;
+}
+
+
+.frontPager{
+  color: rgb(149, 149, 149);
+  padding-right: 8.5em;
+  margin-left: 4em;
+}
+.frontPager .text-uppercase h5{
+  margin: 0;
+  font-size: 30px;
+  line-height: 1
+}
+.frontPager .text-uppercase h2{
+  margin: 0;
+  color: red;
+}
+.frontPager .text-uppercase p{
+  letter-spacing: .25em
+}
+/* <-- END TITLE --> */
+
+/* <-- COLLECTIONS --> */
+.collect,
+.bestlow,
+.honda{
+  top: 0;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+}
+.collect h3,
+.bestlow h3,
+.honda h3{
+  line-height: 1;
+  color: gold;
+  margin-bottom: 1em;
+}
+.bike:hover .collect,
+.car:hover .bestlow,
+.moto:hover .honda{
+  animation: all .5s linear
+}
+@keyframes all{
+  from{
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to{
+    transform: translateY(0%);
+  }
+}
+.collection img{
+  width: 100%;
+  height: 20em;
+}
+/* <-- END COLLECTIONS --> */
+
+
+/* <-- START REVIEWS --> */
+.fash{
+  padding: 0 18em;
+}
+.col-3{
+  align-self: center;
+}
+.line{
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.row-1,
+.row-3{
+  margin-left: auto;
+  width: 50%;
+  border: 1px solid #363c45;
+}
+.row-2,
+.row-5{
+  border: 1px solid #363c45;
+}
+.row-4,
+.row-6{
+  margin-right: auto;
+  width: 50%;
+  border: 1px solid #363c45;
+}
+
+.fash .col-6::before{
+  content: '';
+  position: absolute;
+  width: 27px;
+  left: 19px;
+  border-left: 20px solid #363c45;
+  border-top: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+}
+.fash .col-6::after{
+  content: '';
+  position: absolute;
+  width: 27px;
+  top: 0;
+  right: 19px;
+  border-right: 20px solid #363c45;
+  border-top: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+}
+.feat{
+  border: 5px solid #363c45;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #14151b;
+}
+.feat h5{
+  color: #e9ecef
+}
+.feat::before{
+  content: '';
+  position: absolute;
+  width: 27px;
+  top: 0;
+  left: 14px;
+  border-left: 20px solid #14151b;
+  border-top: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+}
+.feat::after{
+  content: '';
+  position: absolute;
+  width: 27px;
+  top: 0;
+  right: 14px;
+  border-right: 20px solid #14151b;
+  border-top: 41px solid transparent;
+  border-bottom: 41px solid transparent;
+  z-index: 1;
+}
+
+.letorum .carousel-inner .col-xs-12{
+  display: flex;
+}
+.letorum .carousel-inner .card{
+  width: 33.33%;
+  margin: 0 1em;
+  position: relative;
+  border-radius: 20px
+  
+}
+.letorum .carousel-inner .card img{
+  width: 100%;
+  height: 425px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px
+}
+.intro{
+  animation: carousel .5s linear
+}
+@keyframes carousel{
+  from{
+    opacity: 0;
+    left: 50px;
+  }
+  to{
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.star-inner{
+  font-family: 'Font Awesome 5 Free';
+  color: gold;
+  font-weight: 300;
+}
+
+.letorum .carousel-control-prev,
+.letorum .carousel-control-next{
+  margin: 0 1em;
+  height: 75px;
+  width: 75px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+}
+.cart{
+  display: block;
+  height: 50px;
+  border-radius: 20px;
+}
+/* <-- END REVIEWS --> */
+
+ /* END CONTENTS  */
+
+ /* START FOOTER */
+.footer{
+  background-image: url('//cdn.shopify.com/s/files/1/3012/8606/files/bkg_footer.jpg?v=1519662805');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+}
+.footer .info{
+  line-height: 1
+}
+
+ /* END FOOTER */
+
+/* <--START SHOP--> */
+.shopIndex{
+  background-color: #0e1623;
+  color: #ccc2c2;;
+}
+.bannerShop{
+  background-image: url('//cdn.shopify.com/s/files/1/3012/8606/t/3/assets/collection_top.jpg?10040808407262901655');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 30em;
+  position: relative;
+}
+.bannerShop h1{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #3454aec7;
+    text-shadow: 4px 6px 18px #9f0808;
+    font-size: 4em;
+}
+.shopIndex .iconList:hover{
+  color: red;
+}
+.shopIndex .col-xl-3 .border .mt-5:first-child p:hover{
+  color: red;
+  cursor: pointer;
+}
+/* <--END SHOP--> */

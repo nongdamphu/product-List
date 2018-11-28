@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "phu-project",
+    "staging": "phu-project",
+    "phu-project": "phu-project"
+  }
+}
