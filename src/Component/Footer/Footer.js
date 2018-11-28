@@ -4,7 +4,7 @@ class Footer extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            tab:[
+            tab: [
                 {
                     name: 'Home',
                     to: '/'
@@ -27,23 +27,27 @@ class Footer extends Component {
 
     showMenu = () => {
         let result = null
-        let {tab} = this.state
+        let { tab } = this.state
         result = tab.map((list, index) => {
             return (
                 <nav className="nav flex-column col-lg-3 px-4 border-left" key={index}>
-                    <h5 className="text-light mb-4">Menu</h5>
+                    <h5 className="text-light mb-4">{list.name}</h5>
                     {this.showMain()}
                 </nav>
             )
         })
         return result
     }
-    showMain = () =>{
+    showMain = () => {
         let result = null
-        let {tab} = this.state
+        let { tab } = this.state
         result = tab.map((list, index) => {
             return (
-                    <Link className="nav-link p-4 font-oswald" to={list.to} key={index}>{list.name}</Link>
+                <Link
+                    className="nav-link p-4 font-oswald"
+                    to={list.to}
+                    key={index}
+                >{list.name}</Link>
 
             )
         })
